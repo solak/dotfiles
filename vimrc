@@ -214,9 +214,11 @@ set statusline=%f%=%F
 
 " ctrlp
 
-let g:ctrlp_cmd = 'CtrlPBuffer'
+nmap <C-p> :CtrlPBuffer<CR>
 nmap <Leader>p :CtrlP<CR>
 let g:ctrlp_regexp = 0
+
+nmap <Tab> :CtrlPMRUFile<CR>
 
 
 " MatchParen caused micro slowdowns
