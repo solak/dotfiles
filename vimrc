@@ -275,6 +275,8 @@ map <Leader>s :call SyntasticCheck()<CR>
 
 " silver searcher
 
+Plugin 'rking/ag.vim'
+
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
