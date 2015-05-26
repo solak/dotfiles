@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/Tomasz/Programming/wimdu/app/modules/abtest'
 let g:netrw_dirhist_2='/Users/Tomasz/Programming/wimdu/app/controllers/checkout'
 let g:netrw_dirhist_3='/Users/Tomasz/Programming/wimdu/app/modules/abtest'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/Tomasz/Programming/wimdu/app/views/bookings'
 let g:netrw_dirhist_6='/Users/Tomasz/Programming/wimdu/app/views'
 let g:netrw_dirhist_7='/Users/Tomasz/Programming/wimdu/app/views/bookings'
 let g:netrw_dirhist_8='/Users/Tomasz/Programming/wimdu/app/views'
+let g:netrw_dirhist_9='/Users/Tomasz/.dotfiles'
