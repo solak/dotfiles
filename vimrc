@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -45,6 +45,7 @@ Bundle 'MartinLafreniere/vim-PairTools'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'tpope/vim-sleuth'
+Bundle 'luochen1990/rainbow'
 
 filetype plugin on
 filetype indent on
@@ -126,6 +127,12 @@ let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+"
+" solarized theme
+" let g:solarized_termcolors=256
+syntax enable
+colorscheme solarized
+set background=dark
 
 " graphical
 if has('gui_running')
@@ -139,21 +146,11 @@ if has('gui_running')
   map <Leader>f :set invfullscreen<CR>
 
   set vb
+
+  " fullscreen
+  set fu
 endif
 
-if !has("gui_running")
-    let g:solarized_termtrans=1
-    let g:solarized_termcolors=256
-endif
-
-" solarized theme
-" let g:solarized_termcolors=256
-syntax enable
-colorscheme solarized
-set background=dark
-
-" fullscreen
-set fu
 
 " tmp files
 
@@ -214,11 +211,13 @@ set statusline=%f%=%F
 
 " ctrlp
 
-nmap <C-p> :CtrlPBuffer<CR>
+let g:ctrlp_cmd = 'CtrlPBuffer'
 nmap <Leader>p :CtrlP<CR>
 let g:ctrlp_regexp = 0
 
 nmap <Tab> :CtrlPMRUFile<CR>
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|svg|eot|woff|ttf)$'
 
 
 " MatchParen caused micro slowdowns
@@ -272,7 +271,10 @@ let g:pairtools_php_tweraser=1
 
 " syntastic
 
-let g:syntastic_mode_map = { "mode": "passive" }
+let g:syntastic_mode_map = {
+        \ "mode": "active",
+        \ "active_filetypes": ["ruby"],
+        \ "passive_filetypes": ["javascript", "haml"] }
 map <Leader>s :call SyntasticCheck()<CR>
 
 " silver searcher
@@ -293,4 +295,12 @@ endif
 " whitespace
 Bundle 'ntpeters/vim-better-whitespace' 
 autocmd FileType ruby,eruby autocmd BufWritePre <buffer> StripWhitespace
+
+" colorschemes
+
+Plugin 'flazz/vim-colorschemes'
+
+" rubocop
+
+Plugin 'ngmy/vim-rubocop'
 

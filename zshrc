@@ -80,3 +80,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR="mvim"
+alias ctags="`brew --prefix`/bin/ctags"
+export GITHUB_USER="solak"
