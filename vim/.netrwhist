@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Tomasz/Programming/insurance_api/spec/fixtures'
-let g:netrw_dirhist_2='/Users/Tomasz/Programming/insurance_api/spec/fixtures/responses'
-let g:netrw_dirhist_3='/Users/Tomasz/Programming/insurance_api/spec/fixtures'
-let g:netrw_dirhist_4='/Users/Tomasz/Programming/insurance_api/spec'
-let g:netrw_dirhist_5='/Users/Tomasz/Programming/insurance_api'
-let g:netrw_dirhist_6='/Users/Tomasz/Programming/insurance_api/spec'
-let g:netrw_dirhist_7='/Users/Tomasz/Programming/insurance_api/spec/parsers'
-let g:netrw_dirhist_8='/Users/Tomasz/Programming/wimdu/app/controllers'
-let g:netrw_dirhist_9='/Users/Tomasz/Programming/wimdu'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/Tomasz/Programming/allianz_api/lib/allianz_api'

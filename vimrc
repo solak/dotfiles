@@ -184,11 +184,6 @@ set guicursor+=a:blinkon0
 
 nmap <Leader>c :let @+ = expand("%")<CR>
 
-" jumping through methods
-
-nmap J ]m
-nmap K [m
-
 " autoreload changed files
 
 set autoread
