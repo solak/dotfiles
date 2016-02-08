@@ -1,3 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/Tomasz/Programming/allianz_api/lib/allianz_api'
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/Tomasz/Programming/wimdu/app/models/queried'
+let g:netrw_dirhist_2='/Users/Tomasz/Programming/wimdu/app/models'
+let g:netrw_dirhist_3='/Users/Tomasz/Programming/wimdu/app/services/insurance_service'
+let g:netrw_dirhist_4='/Users/Tomasz/Programming/allianz_api'
+let g:netrw_dirhist_5='/Users/Tomasz/Programming/allianz_api/lib'
+let g:netrw_dirhist_6='/Users/Tomasz/Programming/allianz_api/lib/allianz_api'
+let g:netrw_dirhist_7='/Users/Tomasz/Programming/allianz_api'
